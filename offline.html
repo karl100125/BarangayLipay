@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0d1b3e">
+    <title>Offline — Barangay Lipay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{
+            font-family:'Plus Jakarta Sans',sans-serif;
+            background:linear-gradient(160deg,#071029 0%,#0d1b3e 45%,#122060 100%);
+            min-height:100vh;display:flex;align-items:center;justify-content:center;
+            padding:20px;color:#fff;
+        }
+        .offline-box{
+            background:rgba(255,255,255,.05);backdrop-filter:blur(12px);
+            border:1px solid rgba(255,255,255,.1);border-radius:24px;
+            padding:50px 40px;max-width:460px;width:100%;text-align:center;
+            box-shadow:0 24px 64px rgba(0,0,0,.4);
+        }
+        .offline-icon{
+            width:72px;height:72px;margin:0 auto 24px;
+            border-radius:50%;background:rgba(231,76,60,.15);
+            border:1px solid rgba(231,76,60,.3);
+            display:flex;align-items:center;justify-content:center;
+        }
+        .offline-icon svg{
+            width:34px;height:34px;stroke:#e74c3c;fill:none;
+            stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
+        }
+        .offline-box h1{font-size:26px;font-weight:800;margin-bottom:12px}
+        .offline-box p{color:rgba(255,255,255,.6);font-size:14px;line-height:1.7;margin-bottom:28px}
+        .offline-btn{
+            display:inline-block;background:linear-gradient(135deg,#c0392b,#e74c3c);
+            color:#fff;font-size:14px;font-weight:700;padding:12px 28px;
+            border-radius:10px;text-decoration:none;transition:.2s;
+        }
+        .offline-btn:hover{opacity:.9;transform:translateY(-2px)}
+        .offline-note{margin-top:18px;font-size:12px;color:rgba(255,255,255,.35)}
+    </style>
+</head>
+<body>
+    <div class="offline-box">
+        <div class="offline-icon">
+            <svg viewBox="0 0 24 24"><path d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01M1 1l22 22M5.343 13.343a10.5 10.5 0 0113.314 0M2 9.394a15.5 15.5 0 0113.788-4.135"/></svg>
+        </div>
+        <h1>You're Offline</h1>
+        <p>Walang internet connection sa ngayon. Subukang kumonekta muli at i-refresh ang page.</p>
+        <a href="./index.php" class="offline-btn">Try Again</a>
+        <p class="offline-note">Barangay Lipay Document Request System</p>
+    </div>
+</body>
+</html>
